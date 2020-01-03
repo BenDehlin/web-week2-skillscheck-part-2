@@ -9,7 +9,9 @@
 //dragonMapper should return the the new array. You should
 //use the built-in array method .map
   
-  //Code here
+ function dragonMapper(array){
+   return array.map(str => str += '...here be dragons')
+ }
 
 
 
@@ -20,7 +22,9 @@
 //does NOT have the key favoriteCookie.
 //cookieLoversOnly should return the filtered array.
   
-  //Code here
+function cookieLoversOnly(array){
+  return array.filter(object => object['favoriteCookie'])
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -34,7 +38,9 @@
 //Hint: there is an array method for this.
 
 
-  //Code here
+function changeValue(array, cb){
+  array.forEach(element => cb(element))
+}
 
 
 
@@ -46,7 +52,9 @@
 //of multiplying all the elements together)
 //Return the product.
   
-  //Code here
+function findProduct(array){
+  return array.reduce((acc, curr) => acc * curr)
+}
 
 
 //////////////////PROBLEM 5////////////////////
@@ -63,7 +71,9 @@
 // character at index 2 of "wide": "d"
 // cipherize will return: "d"
 
-  //Code here
+function cipherize(array, string){
+  return string.charAt(array.indexOf(string))
+}
 
 
 
@@ -74,4 +84,6 @@
 //string. Use built-in methods for taking the string 
 //apart, reversing it, and putting it back together again.
 
-  //Code here
+function reverseMe(string){
+  return string.split('').reverse().join('')
+}
