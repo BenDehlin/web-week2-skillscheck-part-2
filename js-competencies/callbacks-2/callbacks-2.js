@@ -9,7 +9,9 @@
 //return the FIRST callback param invoked. Else, invokesCallbacks 
 //should return the SECOND callback param invoked.
 
-  //Code here
+function invokesCallbacks(num, callback1, callback2){
+  return num > 10 ? callback1() : callback2()
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -22,10 +24,7 @@
 
   var greeting;
 
-  function timedGreeting(callback){
-
-    //Code here
-
-    
+  function timedGreeting(cb){
+    greeting = setTimeout(cb(), 1000)
   }
 
