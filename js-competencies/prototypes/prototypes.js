@@ -4,9 +4,8 @@
 //Create a prototype for a String called reverse that returns the string but, like, reversed.
 
 
-String.prototype.reverse = function(string){
-  string = string.split('').reverse().join('')
-  return string
+String.prototype.reverse = function(){
+  return this.split('').reverse().join('')
 }
 
 
